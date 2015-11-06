@@ -15,4 +15,15 @@
     NSLog(@"Setting a remainder for %@", date);
 }
 
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        UITabBarItem *tbi = self.tabBarItem;
+        tbi.title = @"Reminder";
+        UIImage *i = [UIImage imageNamed:@"Time.png"];
+        tbi.image = i;
+    }
+    return self;
+}
+
 @end

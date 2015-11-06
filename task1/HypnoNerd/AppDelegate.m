@@ -19,12 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
     // Override point for customization after application launch.
     
     HypnosisViewController *hvc = [[HypnosisViewController alloc]init];
-    NSBundle *appBundle = [NSBundle mainBundle];
-    ReminderViewController *rvc = [[ReminderViewController alloc]initWithNibName:@"ReminderViewController"
-                                                                          bundle:appBundle];
+    ReminderViewController *rvc = [[ReminderViewController alloc]init];
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     tabBarController.viewControllers = @[hvc,rvc];
     self.window.rootViewController = tabBarController;

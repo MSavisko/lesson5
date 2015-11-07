@@ -7,8 +7,20 @@
 //
 
 #import "ReminderViewController.h"
+#import <Foundation/Foundation.h>
 
 @implementation ReminderViewController
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"ReminderViewController loaded its view.");
+}
+
+- (void) viewWillAppear:(BOOL)animated  {
+    [super viewWillAppear:animated];
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+    
+}
 
 - (IBAction)addReminder:(id)sender {
     NSDate *date = self.datePicker.date;

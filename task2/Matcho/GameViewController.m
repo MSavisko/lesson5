@@ -43,11 +43,14 @@
     self.scoreCount = [self.game score];
         if (self.game.everyMatchIsDone) {
             if (self.tabBarController) {
-                if (self.tabBarController.selectedIndex == 0){
+                if (self.tabBarController.selectedIndex == 0) {
                     [self performSegueWithIdentifier:@"PushGameOver" sender:nil];
-                }else if (self.tabBarController.selectedIndex == 1){
+                }else if (self.tabBarController.selectedIndex == 1) {
                     [self performSegueWithIdentifier:@"ModalGameOver" sender:nil];
                 }
+            }
+            else {
+                [self dismissViewControllerAnimated:YES completion:nil];
             }
         }
     [self updateUI];

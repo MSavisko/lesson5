@@ -8,9 +8,9 @@
 
 #import "Game.h"
 #import "PlayingCardDeck.h"
-#import "ViewController.h"
+#import "GameViewController.h"
 
-@interface ViewController ()
+@interface GameViewController ()
 
 @property (nonatomic, strong) Game *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation ViewController
+@implementation GameViewController
 
 - (void) setScoreCount:(int)scoreCount {
     _scoreCount = scoreCount;
@@ -40,8 +40,18 @@
 	NSUInteger cardIndex = [self.cardButtons indexOfObject:sender];
 	[self.game chooseCardAtIndex:cardIndex];
     self.logLabel.text = [self.game logScore];
-	[self updateUI];
     self.scoreCount = [self.game score];
+        if (self.game.everyMatchIsDone) {
+            if (self.tabBarController) {
+                if (self.tabBarController.selectedIndex == 0){
+                    [self performSegueWithIdentifier:@"PushGameOver" sender:nil];
+                }else if (self.tabBarController.selectedIndex == 1){
+                    [self performSegueWithIdentifier:@"ModalGameOver" sender:nil];
+                }
+            }
+        }
+    [self updateUI];
+    
 }
 
 
@@ -54,9 +64,6 @@
 		[cardButton setBackgroundImage:[self backgroundImageForCard:card]
 							  forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched && ![self.game everyMatchIsDone];
-        if (!cardButton.enabled) {
-            self.logLabel.text = [NSString stringWithFormat:@"Game is Over!"];
-        }
 	}
 }
 

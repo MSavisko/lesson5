@@ -19,6 +19,7 @@
 		5C7387081BD534FD002CDAF3 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7387031BD534FD002CDAF3 /* PlayingCard.m */; };
 		5C7387091BD534FD002CDAF3 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7387051BD534FD002CDAF3 /* PlayingCardDeck.m */; };
 		89A64CF41BEF5F9F0022EBBF /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A64CF31BEF5F9F0022EBBF /* GameOverViewController.m */; };
+		89A64CF81BEF94C20022EBBF /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A64CF71BEF94C20022EBBF /* CustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,8 @@
 		5C7386E61BD534CF002CDAF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C7386E81BD534CF002CDAF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C7386E91BD534CF002CDAF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C7386EB1BD534CF002CDAF3 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		5C7386EC1BD534CF002CDAF3 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5C7386EB1BD534CF002CDAF3 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		5C7386EC1BD534CF002CDAF3 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ../GameViewController.m; sourceTree = "<group>"; };
 		5C7386EF1BD534CF002CDAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C7386F11BD534CF002CDAF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7386F41BD534CF002CDAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,8 +43,10 @@
 		5C7387031BD534FD002CDAF3 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		5C7387041BD534FD002CDAF3 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		5C7387051BD534FD002CDAF3 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
-		89A64CF21BEF5F9F0022EBBF /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
-		89A64CF31BEF5F9F0022EBBF /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		89A64CF21BEF5F9F0022EBBF /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverViewController.h; path = ../GameOverViewController.h; sourceTree = "<group>"; };
+		89A64CF31BEF5F9F0022EBBF /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOverViewController.m; path = ../GameOverViewController.m; sourceTree = "<group>"; };
+		89A64CF61BEF94C20022EBBF /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		89A64CF71BEF94C20022EBBF /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +82,6 @@
 				5C7386FC1BD534FD002CDAF3 /* Classes */,
 				5C7386E81BD534CF002CDAF3 /* AppDelegate.h */,
 				5C7386E91BD534CF002CDAF3 /* AppDelegate.m */,
-				5C7386EB1BD534CF002CDAF3 /* GameViewController.h */,
-				5C7386EC1BD534CF002CDAF3 /* GameViewController.m */,
-				89A64CF21BEF5F9F0022EBBF /* GameOverViewController.h */,
-				89A64CF31BEF5F9F0022EBBF /* GameOverViewController.m */,
 				5C7386EE1BD534CF002CDAF3 /* Main.storyboard */,
 				5C7386F11BD534CF002CDAF3 /* Assets.xcassets */,
 				5C7386F31BD534CF002CDAF3 /* LaunchScreen.storyboard */,
@@ -103,6 +102,7 @@
 		5C7386FC1BD534FD002CDAF3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89A64CF51BEF94370022EBBF /* ViewController */,
 				5C7386FD1BD534FD002CDAF3 /* Models */,
 			);
 			path = Classes;
@@ -123,6 +123,19 @@
 				5C6D992F1BDFF05B005F6FC8 /* Game.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		89A64CF51BEF94370022EBBF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C7386EB1BD534CF002CDAF3 /* GameViewController.h */,
+				5C7386EC1BD534CF002CDAF3 /* GameViewController.m */,
+				89A64CF21BEF5F9F0022EBBF /* GameOverViewController.h */,
+				89A64CF31BEF5F9F0022EBBF /* GameOverViewController.m */,
+				89A64CF61BEF94C20022EBBF /* CustomViewController.h */,
+				89A64CF71BEF94C20022EBBF /* CustomViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A64CF41BEF5F9F0022EBBF /* GameOverViewController.m in Sources */,
+				89A64CF81BEF94C20022EBBF /* CustomViewController.m in Sources */,
 				5C7387081BD534FD002CDAF3 /* PlayingCard.m in Sources */,
 				5C7387071BD534FD002CDAF3 /* Deck.m in Sources */,
 				5C7386ED1BD534CF002CDAF3 /* GameViewController.m in Sources */,

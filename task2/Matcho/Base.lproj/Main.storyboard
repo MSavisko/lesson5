@@ -8,6 +8,7 @@
         <scene sceneID="Ifj-ve-Xhh">
             <objects>
                 <tabBarController id="HlV-wS-rpE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gc1-Hp-2tQ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="uEs-FI-z3w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -16,17 +17,46 @@
                     <connections>
                         <segue destination="Rtl-3e-nfl" kind="relationship" relationship="viewControllers" id="0R8-qP-rhM"/>
                         <segue destination="yXs-t4-cEy" kind="relationship" relationship="viewControllers" id="0l1-po-woP"/>
+                        <segue destination="eEB-wA-0WG" kind="relationship" relationship="viewControllers" id="zX1-O5-w9u"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fw-7b-AnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44" y="-310"/>
         </scene>
-        <!--First Game-->
+        <!--Color-->
+        <scene sceneID="zqt-hK-Juh">
+            <objects>
+                <viewController id="eEB-wA-0WG" customClass="CustomViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zOa-gw-QQR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sVw-Vv-3mr">
+                                <rect key="frame" x="111" y="269" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="START!">
+                                    <color key="titleColor" red="0.97647064924240112" green="0.0" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rtl-3e-nfl" kind="modal" id="Vdr-R6-NzG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Color" id="0wb-gD-zbd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wq-Zc-enf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="62"/>
+        </scene>
+        <!--Navigator Controller-->
         <scene sceneID="Dux-45-Fon">
             <objects>
-                <navigationController title="First Game" id="Rtl-3e-nfl" sceneMemberID="viewController">
+                <navigationController title="Navigator Controller" id="Rtl-3e-nfl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="First Game" id="wAS-gg-04I"/>
+                    <navigationItem key="navigationItem" id="EKW-5t-6he"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3gZ-rn-J2K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -39,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="493" y="-674"/>
         </scene>
-        <!--Game View Controller-->
+        <!--First Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController title="First Game" id="BYZ-38-t0r" customClass="GameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -544,6 +574,7 @@
         <image name="cardback" width="68" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kAW-Bj-wYw"/>
+        <segue reference="O2A-WK-2lA"/>
+        <segue reference="Vdr-R6-NzG"/>
     </inferredMetricsTieBreakers>
 </document>
